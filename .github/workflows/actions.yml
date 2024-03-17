@@ -16,4 +16,4 @@ jobs:
       with:
         server: ftp.strimodetravel.com
         username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
+
