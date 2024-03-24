@@ -3268,7 +3268,7 @@ input[type="button"].btn-block {
     justify-content: space-between; }
 
 .navbar-brand {
-  display: inline-block;
+  display: inline-flex;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -3277,7 +3277,9 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
-
+    .navbar-brand p{
+      font-size:23px;
+    }
   .strimode_logo{
     object-fit: contain;
     height:60px;
@@ -3385,7 +3387,12 @@ input[type="button"].btn-block {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+    .navbar-brand p{
+      font-size:20px;
+    }
+  
+  }
 
 @media (min-width: 768px) {
   .navbar-expand-md {
@@ -7281,7 +7288,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.8;
   font-weight: 300;
   color: #4d4d4d; }
@@ -7462,7 +7469,8 @@ h1, h2, h3, h4, h5,
 
 .hero-wrap {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  height:70vh;
   position: inherit; }
   .hero-wrap .overlay {
     position: absolute;
@@ -7483,7 +7491,7 @@ h1, h2, h3, h4, h5,
     background: linear-gradient(135deg, #2ebdc4 0%, #68e5b2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebdc4', endColorstr='#68e5b2', GradientType=1 ); }
   .hero-wrap .row{
-    padding-top: 50px;
+    padding-top: 150px;
   }
 .slider-text {
   color: #fff; }
@@ -7714,7 +7722,17 @@ h1, h2, h3, h4, h5,
   margin-top: -120px;
   z-index: 2;
   position: relative; }
-
+  .services-section .imageCont{
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-top: -1.5rem;
+  }
+.services-section .image{
+  width:100%; 
+  max-height: 250px;
+  min-height: 250px;
+  
+}
 .services {
   background: #fff;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
@@ -8858,15 +8876,28 @@ textarea.form-control {
     transition: .3s all ease; }
     .block-4 .nonloop .owl-dots .owl-dot.active {
       background: #f85959; }
+  .contact-section .contact-info{
 
+  }
 .contact-section .contact-info p a {
   font-size: 18px;
-  color: #1a1a1a; }
+  color: #1a1a1a;
+  text-align: center; }
 
   .contact-info p,a {
     font-size: 20px;
     color: #1a1a1a; }
+    .contact-section .contact-info .card:hover{
+      background-color: #f85959;
+      transition: .3s ease-in;
 
+    }
+    .contact-section .contact-info .card:hover >  p {
+      color: white;
+    }
+    .contact-section .contact-info .card:hover >  p a{
+      color: white;
+    }
 .block-9 .form-control {
   outline: none !important;
   -webkit-box-shadow: none !important;
