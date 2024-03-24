@@ -7288,7 +7288,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Poppins", Arial, sans-serif;
   background: #fff;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.8;
   font-weight: 300;
   color: #4d4d4d; }
@@ -7384,6 +7384,9 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
       background: #f85959;
       border: 1px solid #f85959; }
+      .ftco-navbar-light .navbar-nav > .nav-item.cta.active > a {
+        background: #f85959;
+        border: 1px solid #f85959; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
     border-color: #f85959; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
@@ -8876,8 +8879,12 @@ textarea.form-control {
     transition: .3s all ease; }
     .block-4 .nonloop .owl-dots .owl-dot.active {
       background: #f85959; }
-  .contact-section .contact-info{
-
+  .contact-section .contact-info .card .card-hdr{
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .contact-section .contact-info .card .card-hdr img{
+    height: 250px;
   }
 .contact-section .contact-info p a {
   font-size: 18px;
@@ -8892,10 +8899,10 @@ textarea.form-control {
       transition: .3s ease-in;
 
     }
-    .contact-section .contact-info .card:hover >  p {
+    .contact-section .contact-info .card:hover >  .card-body p {
       color: white;
     }
-    .contact-section .contact-info .card:hover >  p a{
+    .contact-section .contact-info .card:hover >  .card-body p a{
       color: white;
     }
 .block-9 .form-control {
